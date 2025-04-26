@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1075848041428",
+    "project_id": "edge-course-flutter-project",
+    "storage_bucket": "edge-course-flutter-project.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075848041428:android:fadbe4a478d9a462997c41",
+        "android_client_info": {
+          "package_name": "com.sanzidislam.edge_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBqlB39MpL1GqM0ujPHZ26czzGqbvEykc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
