@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../controllers/all_products_controller.dart';
+import 'package:edge_project/app/modules/catagory-products/controllers/catagory_products_controller.dart';
 import 'package:edge_project/app/routes/app_pages.dart';
 
-class AllProductsView extends GetView<AllProductsController> {
-  const AllProductsView({super.key});
+class CatagoryProductsView extends GetView<CatagoryProductsController> {
+  const CatagoryProductsView({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('All Products'),
+        title: Text('${Get.arguments.toString()} Products'),
         centerTitle: true,
       ),
       body: Obx(() {
@@ -45,7 +45,8 @@ class AllProductsView extends GetView<AllProductsController> {
                       child: product.image == null || product.image.isEmpty
                           ? Image.asset(
                               'assets/images/fallback.png',
-                              fit: BoxFit.cover,
+                              // fit: BoxFit.cover,
+                              fit: BoxFit.fitHeight,
                             )
                           : Image.network(
                               product.image,

@@ -35,7 +35,7 @@ Future<void> mRegister({required String email, required String pass}) async {
     Get.snackbar(
       "Success",
       "Account created successfully",
-      snackPosition: SnackPosition.BOTTOM,
+      snackPosition: SnackPosition.TOP,
       duration: const Duration(seconds: 2),
     );
 

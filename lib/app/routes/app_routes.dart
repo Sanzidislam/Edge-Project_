@@ -10,6 +10,10 @@ abstract class Routes {
   static const LOGIN = _Paths.LOGIN;
   static const REGISTER = _Paths.REGISTER;
   static const PRODUCT_CARD = _Paths.PRODUCT_CARD;
+  static const NOTIFICATIONS = _Paths.NOTIFICATIONS;
+  static const PRODUCT_DETAILS = _Paths.PRODUCT_DETAILS;
+  static const LANDING_PAGE = _Paths.LANDING_PAGE;
+  static const CATAGORY_PRODUCTS = _Paths.CATAGORY_PRODUCTS;
 }
 
 abstract class _Paths {
@@ -21,4 +25,8 @@ abstract class _Paths {
   static const LOGIN = '/login';
   static const REGISTER = '/register';
   static const PRODUCT_CARD = '/product-card';
+  static const NOTIFICATIONS = '/notifications';
+  static const PRODUCT_DETAILS = '/product-details';
+  static const LANDING_PAGE = '/landing-page';
+  static const CATAGORY_PRODUCTS = '/catagory-products';
 }

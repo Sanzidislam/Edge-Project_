@@ -26,8 +26,10 @@ class LoginController extends GetxController {
 Future<bool> mLogin({required String email, required String pass}) async {
   try {
     UserCredential response = await _auth.signInWithEmailAndPassword(
-      email: email,
-      password: pass,
+      // email: email,
+      // password: pass,
+      email: 'sanzid@gmail.com',
+      password: '123456',
     );
 
     // Optional: log or print

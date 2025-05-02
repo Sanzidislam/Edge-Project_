@@ -54,6 +54,7 @@ class RegisterView extends GetView<RegisterController> {
                     style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.symmetric(vertical: 14),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+                      backgroundColor: Colors.blue,
                     ),
                     onPressed: () {
                       controller.mRegister(
@@ -61,22 +62,30 @@ class RegisterView extends GetView<RegisterController> {
                         email: controller.emailtextEditingController.text,
                       );
                     },
-                    child: const Text(
-                      "Register",
-                      style: TextStyle(fontSize: 16),
-                    ),
+                    child:
+                    // white register text
+                    const Text(
+                      'Register',
+                      style: TextStyle(fontSize: 18, color: Colors.white),
+                    ), 
                   ),
                 ),
                 const SizedBox(height: 16),
                 //already have an account only the button should be clickable
-                TextButton(
-                  onPressed: () {
-                    Get.offNamed('/login'); // Navigate to Login page
-                  },
-                  child: const Text(
-                    "Already have an account? Login",
-                    style: TextStyle(fontSize: 16),
-                  ),
+                        Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Text("Already have an account?"),
+                    TextButton(
+                      onPressed: () {
+                        Get.toNamed('/login'); // Navigate to Login page
+                      },
+                      child: const Text(
+                        'Login',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ],
                 ),
                 const SizedBox(height: 16),
 

@@ -1,23 +1,13 @@
 import 'package:get/get.dart';
+import 'package:edge_project/app/data/models/cart_model.dart';
 
 class CartViewController extends GetxController {
-  //TODO: Implement CartViewController
+  late CartModel cart; // Receive CartModel from arguments
 
-  final count = 0.obs;
   @override
   void onInit() {
     super.onInit();
+    cart = Get.arguments as CartModel; // get passed cart
   }
-
-  @override
-  void onReady() {
-    super.onReady();
-  }
-
-  @override
-  void onClose() {
-    super.onClose();
-  }
-
-  void increment() => count.value++;
 }
+
